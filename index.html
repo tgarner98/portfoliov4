@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="css/media/favicon.png">
+    <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--Main Stylesheet-->
+        <link rel="stylesheet" href="css/styles.css">
+    <title>Tyler Garner</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tyler Garner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Landing-->
+      <div id="landing" class="jumbotron jumbotron-fluid">
+          <div class="container">
+          <h1 class="display-4">Hi, my name is <span class="highlight">Tyler Garner</span></h1>
+          <p class="lead">I'm a <span class="highlight">front end web developer</span></p>
+          <a class="btn btn-primary btn-lg" href="#portfolio" role="button">Check out my work!</a>
+        </div>
+      </div>
+
+      <hr id="portfolio">
+
+      <!--Portfolio-->
+      <h1 class="sect-head">Portfolio</h1>
+      <div id="port-container" class="container">
+        <!--Callisburg Church-->
+        <div class="row div-port">
+          <div class="col-lg-6">
+            <img class="img-portfolio" src="css/media/cburg.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <p class="desc">An informative website for a small church in Callisburg, Texas, built to advertise events and invite new members to join the church.</p>
+            <a href="https://www.callisburgchurch.com/" target="_blank"><button class="btn-visit">Visit</button></a>
+          </div>
+        </div>
+        <!--KlariBeats-->
+        <div class="row div-port">
+          <div class="col-lg-6">
+            <img class="img-portfolio" src="css/media/klaribeats.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <p class="desc">A promotional website for a small-time producer looking to make his music known.</p>
+            <p class="testimonial">"This site helped me get more attention to my music, and I am very
+              happy with how it turned out. It looks awsome and he worked really well with me in 
+              designing it how I wanted." -Rodger Eugster</p>
+              <a href="https://klaribeats.netlify.app/" target="_blank"><button class="btn-visit">Visit</button></a>
+          </div>
+        </div>
+        <!--VentureGen-->
+        <div class="row div-port">
+          <div class="col-lg-6">
+            <img class="img-portfolio" src="css/media/venturegen.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <p class="desc">A small JavaScript project built to cut down the Dungeons & Dragons character 
+              creation process to under a minute.</p>
+              <a href="https://venturegen.netlify.app/" target="_blank"><button class="btn-visit">Visit</button></a>
+          </div>
+        </div>
+      </div>
+
+      <hr id="skills">
+
+      <!--Skills-->
+      <h1 class="sect-head">Skills</h1>
+      <div id="skill-container" class="container">
+        <!--Row 1-->
+        <div class="row">
+          <div class="col-lg-4 col-4">
+            <i class="fab fa-html5"></i><!--HTML-->
+            <p class="p-skill">HTML</p>
+          </div>
+          <div class="col-lg-4 col-4">
+            <i class="fab fa-css3-alt"></i><!--CSS-->
+            <p class="p-skill">CSS</p>
+          </div>
+          <div class="col-lg-4 col-4">
+            <i class="fab fa-js"></i><!--JavaScript-->
+            <p class="p-skill">JavaScript</p>
+          </div>
+        </div>
+        <!--Row 2-->
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <i class="fab fa-bootstrap"></i><!--Bootstrap-->
+            <p class="p-skill">Bootstrap</p>
+          </div>
+          <div class="col-lg-4 col-6">
+            <i class="fab fa-sass"></i><!--Sass-->
+            <p class="p-skill">Sass</p>
+          
+          </div>
+          <div class="col-lg-4 col-12" id="reactLogo">
+            <i class="fab fa-react"></i>
+            <p class="p-skill">Learning React</p>
+          </div>
+        </div>
+      </div>
+
+      <hr id="contact">
+
+      <!--Contact-->
+      <h1 class="sect-head">Contact</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="https://getform.io/f/5c39028f-c2bf-485c-bf4e-4b57fc7b881d" method="POST">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <footer>
+        <a href="https://twitter.com/tylergarner98" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/in/tgarner98/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/tgarner98" target="_blank"><i class="fab fa-github-square"></i></a>
+      </footer>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--Bootstrap.js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
