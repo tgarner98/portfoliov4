@@ -132,7 +132,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <form action="https://getform.io/f/5c39028f-c2bf-485c-bf4e-4b57fc7b881d" method="POST">
+            <form action="https://getform.io/f/5c39028f-c2bf-485c-bf4e-4b57fc7b881d" id="contact-form" method="POST">
               <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
@@ -140,8 +140,9 @@
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                <input id="website" name="website" type="text" value="">
               </div>
-              <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+              <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit' id="btn-submit">Submit</button>
             </form>
           </div>
         </div>
@@ -153,12 +154,21 @@
         <a href="https://www.linkedin.com/in/tgarner98/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/tgarner98" target="_blank"><i class="fab fa-github-square"></i></a>
       </footer>
-
+    <!--Google reCaptcha-->
+    
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!--Popper.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--Bootstrap.js-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <!--Honeypot-->
+    <script>
+      $('contact-form').submit(function(){    
+              if ($('input#website').val().length != 0) {
+                  return false;
+              } 
+      });
+      </script>
+  </body>
 </html>

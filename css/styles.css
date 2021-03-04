@@ -200,6 +200,10 @@ button#btn-submit.btn.btn-primary:hover {
   font-weight: bold;
 }
 
+input#website {
+  display: none;
+}
+
 /*Footer*/
 
 footer {
