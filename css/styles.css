@@ -159,6 +159,10 @@ img.img-portfolio {
   margin-top: 10rem;
 }
 
+.skill-feature {
+  margin-top: 20px;
+}
+
 p.p-skill {
   font-size: 20px;
 }
@@ -277,6 +281,10 @@ footer a:hover {
     margin-top: 5rem;
   }
 
+  .skill-feature {
+    margin-top: 5px;
+  }
+
   p.p-skill {
     font-size: 15px;
   }
@@ -314,6 +322,10 @@ footer a:hover {
 
   #skill-container {
     font-size: 100px;
+  }
+
+  .skill-feature {
+    margin-top: 5px;
   }
 
   #reactLogo {
